@@ -31,7 +31,7 @@ const nombres = {
 }
 
 app.get("/abracadabra/usuarios", (req, res) => {
-    res.send(JSON.stringify(nombres, null, 1))
+    res.json(nombres);
 });
 
 // 4. Crear un middleware con la ruta /abracadabra/juego/:usuario para validar que el 
